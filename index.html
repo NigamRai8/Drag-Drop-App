@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+    <div class="app-shell">
+        <header class="hero">
+            <div>
+                <h1>Drag & Drop App</h1>
+            </div>
+            <div class="hero-badge">★Html ★Css ★JavaScript
+            </div>
+        </header>
+        <main>
+            <section class="grid-layout">
+                <article class="panal">
+                    <div class="panal-top">
+                        <h2>Draggable Item </h2>
+                        <button id="resetButton" 
+                        class="button">Reset</button>
+                    </div>
+                    <div class="cards drop-target"
+                     id="itemList">
+                        <div class="card draggable"
+                        draggable="true" data-item="1">
+                            HTML
+                        </div>
+                         <div class="card draggable"
+                        draggable="true" data-item="2">
+                            CSS
+                        </div>
+                         <div class="card draggable"
+                        draggable="true" data-item="3">
+                            JavaScript
+                        </div>
+                         <div class="card draggable"
+                        draggable="true" data-item="4">
+                            React
+                        </div>
+                        <div class="card draggable"
+                        draggable="true" data-item="5">
+                            Node.js
+                        </div>
+                        <div class="card draggable"
+                        draggable="true" data-item="6">
+                            Express.js
+                        </div>
+                        <div class="card draggable"
+                        draggable="true" data-item="7">
+                            MongoDB
+                        </div>
+                        <div class="card draggable"
+                        draggable="true" data-item="8">
+                            SQL
+                        </div>
+                </article>
+                <article class="panal drop-panal">
+                    <h2>Drop Zone</h2>
+                    <div class="dropzone" data-zone="A">
+                        <h3>Zone-A</h3>
+                        <div class="zone-note">Drop items here.</div>
+                    </div>
+                    <div class="dropzone" data-zone="B">
+                        <h3>Zone-B</h3>
+                        <div class="zone-note">Drop items here.</div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
